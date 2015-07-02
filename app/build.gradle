@@ -20,7 +20,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
-    compile 'io.cine:primus:0.0.4'
+    compile 'io.reactivex:rxandroid:0.25.0'
+    compile 'com.github.nkzawa:socket.io-client:0.5.2'
 }

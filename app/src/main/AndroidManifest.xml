@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="nil.alien.housie" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,8 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Board"
+            android:label="@string/title_activity_board"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nil.alien.housie.MainActivity" />
+        </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
 
 </manifest>

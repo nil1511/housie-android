@@ -30,7 +30,8 @@
         android:contentDescription="@string/fb"
         android:layout_alignBottom="@+id/exit"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
 
     <ImageButton
         android:layout_width="50dp"
@@ -41,7 +42,8 @@
         android:layout_above="@+id/fb"
         android:layout_alignLeft="@+id/fb"
         android:layout_alignStart="@+id/fb"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="10dp"
+        android:visibility="invisible" />
 
     <ImageButton
         android:layout_width="160dp"
@@ -54,7 +56,8 @@
         android:contentDescription="@string/options"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="20dp" />
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible" />
 
     <ImageButton
         android:layout_width="160dp"
@@ -67,7 +70,8 @@
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:contentDescription="@string/help"
-        android:layout_marginLeft="20dp" />
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible" />
 
     <ImageButton
         android:layout_width="200dp"
