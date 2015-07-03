@@ -2,10 +2,31 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="nil.alien.housie.Board">
+    android:background="@drawable/main"
+    android:orientation="vertical"
+    tools:context="nil.alien.housie.Board">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:text="100"
+        android:layout_width="256dp"
+        android:background="@drawable/upper_card"
+        android:layout_centerHorizontal="true"
+        android:textSize="100dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_height="200dp"
+        android:id="@+id/newNumber" />
+
+    <TableLayout
+        android:id="@+id/myCard"
+        android:layout_width="300dp"
+        android:background="@drawable/bottom_card"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+    </TableLayout>
 
 </RelativeLayout>
